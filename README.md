@@ -9,6 +9,8 @@ This project demonstrates the use of a hook that makes it easy to manage URL par
 
 ## Install and Run the Project
 
+If you don't want to download the project, you can see it in action on [Code Sandbox](https://codesandbox.io/s/use-query-param-9fnnw?file=/src/App.tsx).
+
 Run the following commands to clone the project, install dependencies, and start the project.
 
 ```
@@ -35,7 +37,3 @@ const [param, setParam] = useQueryParam("paramName", "defaultVal");
 ```
 
 If `paramName` exists in the URL, the `param` will be initialized to that value. Otherwise, it will be initialized to "defaultVal". When calling `setParam("newVal")`, `param` will be updated to "newVal". `paramName` in the URL will also be updated to "newVal".
-
-## Other Sources
-
-- [See useQueryParam on Code Sandbox](https://codesandbox.io/s/use-query-param-9fnnw?file=/src/App.tsx)
