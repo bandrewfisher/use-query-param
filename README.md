@@ -37,3 +37,7 @@ const [param, setParam] = useQueryParam("paramName", "defaultVal");
 ```
 
 If `paramName` exists in the URL, the `param` will be initialized to that value. Otherwise, it will be initialized to "defaultVal". When calling `setParam("newVal")`, `param` will be updated to "newVal". `paramName` in the URL will also be updated to "newVal".
+
+## Futher Reading
+
+- [My blog post explaining how this works](https://brettfisher.dev/easiest-way-to-use-query-param/)
