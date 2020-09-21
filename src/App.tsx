@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import useQueryParam from "./useQueryParam";
 
 function App() {
+  const [search, setSearch] = useQueryParam("search", "");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>
+        Type in to the box below, and watch it change in the URL! Refresh the
+        page, and the value of the URL "search" parameter will be populated into
+        the input box.
+      </p>
+      <input
+        value={search}
+        onChange={({ target: { value } }) => setSearch(value)}
+      />
     </div>
   );
 }
