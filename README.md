@@ -1,6 +1,11 @@
 # useQueryParam
 
-This project demonstrates the use of a hook that makes it easy to manage URL parameters.
+This project demonstrates the use of a hook that makes it easy to manage URL parameters. It was created with [Create React App](https://create-react-app.dev/docs/getting-started/) and also uses TypeScript.
+
+## Most Relevant Files
+
+- [useQueryParam.ts](src/useQueryParam.ts) - the code for the `useQueryParam` hook
+- [App.tsx](src/App.tsx) - a component utilizing the `useQueryParam` hook
 
 ## Install and Run the Project
 
